@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/70e272ea72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/images/NOORJAHAN.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!----<li><a href="#services">Services</a></li>---->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1>Hi, I'm <span>Noorjahan</span> Shaik</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/home/rahulraju/projects/portfolio/Noorjahan.jpeg" style="height:90%; width: 100%;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there...! <br> I am Shaik Noorjahan, a Computer Science b.tech student at Rajiv Gandhi University Of Knowledge Technologies,Basar.
+                    Proficient in languages Java and C,  I'm passionate about problem-solving and exploring innovative technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Oops(java),Java, C, Javascript</li>
+                            <li><span>Web Technologies</span><br>HTML5, CSS3, API</li>
+                            <li><span>Libraries & Frameworks</span><br>ReactJS(basics), Bootstrap</li>
+                            <li><span>Operating System</span><br>Ubuntu(Linux), Windows</li>
+                            <li><span>Database</span><br>Mysql</li>
+                            <li><span>Version Control System</span><br>Git(GitHub)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oasis Infobyte | Remote Intern</span><br>Internship in the field of Web development,
+                            tasks included Landing Page, Temperature Converter, Pesonal Portfolio.<br></li>
+                            <li><span>Technologies used</span><br>HTML,CSS,Javascript</li>
+                            <li><span>internPe | Remote Intern</span><br>One month frontend development internship.<br></li>
+                            <li><span>Technologies used</span><br>HTML,CSS,Javascript,reactjs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="text-decoration: underline;">B.Tech in Computer Science and Engineering</span><br>Rajiv Gandhi University Of Knowledge Technologies, Basar 
+                            (07/2021-05/2025)<br><span>Cgpa: </span>8.6<br><span>Skills: </span>Java, Data Structures and Algorithms, Operating systems, MySql
+                                Data Base Management Systems, Formal Language and Automata Theory.</li>
+                            <li><span style="text-decoration: underline;">Pre-University Course</span><br>Rajiv Gandhi University Of Knowledge Technologies, Basar 
+                            (07/2019-06/2021)<br><span>Cgpa: </span>8.5<br><span>Skills: </span>Mathematics, Physics, Chemistry</li>
+                            <li><span style="text-decoration: underline;">School</span><br>Telangana State Model School, Gurthur 
+                            (2014-2019)<br><span>Cgpa: </span>9.8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---poertfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-2.png" >
+                <div class="layer">
+                    <h2 style="text-decoration: underline; padding-bottom: 10px;">Image Search</h2>
+                    <p>Created a cool Image Search Engine project where users can easily find pictures 
+                        by typing words (like "beach" or "cat").It's like having a photo album 
+                        that knows exactly what you want to see and we can download!
+                        <br><p style="text-decoration: underline; font-weight: bold;"></p> 
+                    </p>
+                    <a href="https://noorjahanimagesearch.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" style="background-color: #fff;">
+                <img src="personal-portfolio-img/images/sorting3.png" >
+                <div class="layer">
+                    <h2 style="text-decoration: underline; padding-bottom: 10px;">Sorting Algorithms visualization</h2>
+                    <p>Developed a project that visualizes various sorting algorithms and measures their execution time,
+                         allowing users to input array sizes for performance comparison and educational insights.</p> 
+                    </p>
+                    <a href="https://noorjahansortingalgorithms.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/tictac.jpg" >
+                <div class="layer">
+                    <h2 style="text-decoration: underline; padding-bottom: 10px;">Tic-Tac-Toe</h2>
+                    <p>Designed a fully functional Tic Tac Toe game, showcasing proficiency 
+                        algorithmic logic. Developed a user-friendly two-player experience, 
+                        allowing strategic engagement within a 3x3 grid. Utilized HTML, CSS, and JavaScript to create 
+                        an interactive and visually appealing interface.</p> 
+                    </p>
+                    <a href="https://noorjahantictactoe.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>noorjahanshaik234@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9390606321</p>
+                <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/noorjahan-shaik-504516232/" style="color: #fff;">Linkedin</a></p>
+                <a href="personal-portfolio-img/images/NOORJAHN SHAIK-2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name = "Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabName)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz49G5yx3r9d5HtfjFrPaiUBN-gsqmC4pm50SVl4mgpTgU_BCeuY00jBjh8Wk_5_zH5Lw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Message Sent Successfully...!"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000)
+    form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
